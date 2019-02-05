@@ -1,0 +1,302 @@
+\documentclass[a4paper,final]{deedy-resume}% Use US Letter paper, change to a4paper for A4
+    % \usepackage[utf8]{inputenc}
+    % \usepackage[T1]{fontenc}
+    % \usepackage{lmodern}
+    \usepackage{xcolor}
+    \newcommand{\myCvColor}{black!60!red}
+    \usepackage{hyperref}
+    \hypersetup{
+        pdftitle={Jan Šilhan – Curriculum Vitae},
+        colorlinks,
+        urlcolor={\myCvColor}
+    }
+    \usepackage{enumitem}
+    \newcommand{\ndash}{–}
+    \newcommand{\mySep}{{\color{black!40!white}\textbullet{}}}
+    \newcommand{\mySmallSpace}{\vspace{3pt}}
+    \setlist[itemize,1]{leftmargin=.2in}
+    \AtBeginDocument{%
+    \renewcommand{\today}{June 2017}%
+    }
+    \begin{document}
+    
+    %----------------------------------------------------------------------------------------
+    %       TITLE SECTION
+    %----------------------------------------------------------------------------------------
+    \lastupdated % Print the Last Updated text at the top right
+    
+    \namesection{Jan}{Šilhan}{ % Your name
+    \urlstyle{same}{\href{https://www.linkedin.com/in/jan-šilhan-a7361463/}{\path{linkedin.com/in/jan-šilhan-a7361463}}} % Your website, LinkedIn profile or other web address
+    \,|\, \href{mailto:silhanu@gmail.com}{\path{silhanu@gmail.com}}
+    \,|\, \href{tel:+420777160775}{\texttt{+420 777 160 775}} % Your contact information
+    }
+    \vspace{1ex}
+    
+    %----------------------------------------------------------------------------------------
+    %       LEFT COLUMN
+    %----------------------------------------------------------------------------------------
+    
+    \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+    
+    %------------------------------------------------
+    % Education
+    %------------------------------------------------
+    
+    \section{Education}
+    
+    \subsection{Mendel University \protect\\ in Brno}
+    
+    \descript{Bc.~in Engineering Informatics}
+    \location{2016\ndash{}present | Brno, Czech Republic}
+    
+    \sectionspace % Some white-space after the section
+    
+    % \descript{Bc.~in Electronics and Communication}
+    % \location{2011\ndash2015 | Brno, Czech Republic}
+    % Undergraduate Thesis: \href{https://www.vutbr.cz/www_base/zav_prace_soubor_verejne.php?file_id=85774}{\textcolor{\myCvColor}{Complex lighting system}}.
+    % {\small{}B.Sc. equivalent.}
+    
+    %------------------------------------------------
+    % Skills
+    %------------------------------------------------
+    \section{Skills}
+    
+    \subsection{Programming}
+    
+    \location{Language of Choice}
+    {\normalsize
+    Javascript \mySep{} Python \mySep{} C\#
+    \mySmallSpace{}
+    }
+    
+    \location{Javascript stack}
+    {\small
+    Webpack \mySep{} Flow \mySep{} Rollup \mySep{} React \mySep{} Redux \mySep{} ImmutableJS
+    \mySmallSpace{}
+    }
+    
+    
+    \location{Styles stack}
+    {\small
+    CSS4 \mySep{} post-css \mySep{} css-next \mySep{} css modules
+    \mySmallSpace{}
+    }
+    
+    \location{Tech stack}
+    {\small
+    Docker \mySep{}
+    rabbitMQ \mySep{}
+    Portainer \mySep{}
+    grafana
+    \mySmallSpace{}
+    }
+    
+    \location{Played with}
+    {\small
+    C/C++ \mySep{} 
+    SQL
+    \mySmallSpace{}
+    }
+    
+    \location{Touched}
+    {\small
+    PHP \mySep{}
+    Pascal \mySep{}
+    Java \mySep{}
+    Lisp \mySep{}
+    Assembly
+    \mySmallSpace{}
+    }
+    
+    \location{Scripting}
+    {\small
+    Bash \mySep{} 
+    Make \mySep{} 
+    CMake \mySep{} 
+    Perl
+    \mySmallSpace{}
+    }
+    
+    \sectionspace % Some white-space after the section
+    
+    \subsection{Tools}
+    {\small
+    \href{http://www.adobe.com/products/photoshop.html}{Photoshop} \mySep{}
+    \href{https://www.visualstudio.com/}{Visual Studio} \mySep{}
+    \href{https://code.visualstudio.com/}{Visual Studio Code} \mySep{}
+    \href{http://www.vim.org/}{Vim} \\
+    \href{https://www.docker.com/}{Docker} \mySep{}
+    \href{https://git-scm.com/}{Git} \mySep{}
+    \href{http://subversion.apache.org/}{Subversion}
+    }
+    
+    \sectionspace % Some white-space after the section
+    
+    \subsection{Linux}
+    Advanced Use \mySep{} Administration
+    
+    \subsection{Linux}
+    Administration
+    
+    %------------------------------------------------
+    % Interests
+    %------------------------------------------------
+    \section{Interests}
+    {Latest tech} \mySep{}
+    {PC Games} \mySep{} 
+    {Latest trends in front-end} \mySep{}
+    {Extreme sports}
+    %------------------------------------------------
+    % Links
+    %------------------------------------------------
+    \section{References}
+    
+    \href{https://github.com/rajzik}{\path{github.com/rajzik}}
+    
+    \sectionspace % Some white-space after the section
+    
+    
+    %----------------------------------------------------------------------------------------
+    
+    \end{minipage} % The end of the left column
+    \hfill
+    %
+    %----------------------------------------------------------------------------------------
+    %       RIGHT COLUMN
+    %----------------------------------------------------------------------------------------
+    %
+    \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+    
+    %------------------------------------------------
+    % Experience
+    %------------------------------------------------
+    
+    \section{Experience}
+    
+    % \runsubsection{Haskell Developer}%
+    % \descript{|\, IXPERTA Solutions s.r.o.}
+    
+    % \location{2014\ndash{}present | Brno, Czech Republic}
+    % Working in agile team (2 week sprints) designing and implementing
+    % communication integration platform centered around telephony exchange.
+    % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    % \begin{tightitemize}
+    % \item Design \& implementation of various APIs and DSLs.
+    % \item Prototyping \& development of internal tools.
+    % \item Open-sourcing \href{https://github.com/IxpertaSolutions}{reusable components}.
+    % \item Use of GHC extensions for more safety.
+    % \item Occasional infrastructure management (Ansible), packaging (Debian), and
+    % help with mobile development (Android).
+    % %\item Work under NDAs.
+    % \end{tightitemize}
+    
+    \sectionspace % Some white-space after the section
+    
+    %------------------------------------------------
+    
+    \runsubsection{Fullstack Developer}%
+    \descript{|\, IXPERTA s.r.o.}
+    
+    \location{2015\ndash{}present | Brno, Czech Republic}
+    Working and maintenance of enterprise grade product
+    \href{https://www.unify.com/ourpartners/products-services/unified-communications/voice-platforms/hybrid-unified-communications-platforms.aspx}{OpenScape 4000}.
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space    
+    \begin{tightitemize}
+    \item Development of new features, bug-fixing, and maintenance of existing code.
+    \item Continuous development.
+    \item Creation of RPMs.
+    \item Migration of Java applets to Javascript/HTML5.
+    \end{tightitemize}
+
+    \sectionspace % Some white-space after the section
+    
+    \runsubsection{Fullstack Developer}%
+    \descript{|\, IXPERTA Solutions s.r.o.}
+    
+    \location{2017\ndash{}2017 | Brno, Czech Republic}
+    Microservice based system to recognize defects in picture. \\
+    \href{http://industrial.vision/}{Industrial Vision}.
+    \begin{tightitemize}
+    \item Microservice - Docker, rabbitMQ, python, mongoDB.
+    \item Designing reusable and configurable user interface in React, ES6/7 and flow.
+    \item Managed application state using Redux.
+    \item Testing code with Jest.
+    \item Design \& implementation of API via Eve.
+    \end{tightitemize}
+    
+
+    %------------------------------------------------
+    % Other
+    %------------------------------------------------
+    
+    %\section{Other}
+    
+    %\runsubsection{Functional Programming Brno}
+    %\descript{|\, 2015\ndash{}present}
+    %\location{Local meetup for people interested in functional programming}
+    %\begin{tightitemize}
+    %\item ``Founder'', organizer, and speaker.
+    %\href{https://fpbrno.github.io/}{\path{FPBrno.github.io}}
+    %\end{tightitemize}
+    %
+    %\sectionspace % Some white-space after the section
+    
+    %\runsubsection{Teaching Experience}
+    %\descript{|\, 2012\ndash{}2012}
+    %\location{Tutoring and/or teaching courses at universities}
+    %\begin{tightitemize}
+    %\item BRNO UNIVERSITY OF TECHNOLOGY: Basics of embedded devices,
+    %\item Predated by teaching programming even while in high school.
+    %\end{tightitemize}
+    
+    %\sectionspace % Some white-space after the section
+    %
+    %\runsubsection{Smaller Jobs Parallel with Studies}
+    %\descript{|\, 2007\ndash2011}
+    %\location{Various jobs as a contractor}
+    %\begin{tightitemize}
+    %\item JP Consult~\ndash{} web development using Zend framework.
+    %\item Atollon~\ndash{} development of enterprise RIA platform.
+    %\end{tightitemize}
+    %
+    %\sectionspace % Some white-space after the section
+    
+    %------------------------------------------------
+    % Certificates and Awards
+    %------------------------------------------------
+    % \section{Certificates \& Awards}
+    
+    \section{Certificates}
+    
+    \begin{tabular}{rl}
+    2013 & Cisco network academy Routing and Switching \\
+    2013 & Driving license class B \\
+    2017 & Driving license class A
+    \end{tabular}
+    
+    %----------------------------------------------------------------------------------------
+    
+    \end{minipage} % The end of the right column
+    
+    %----------------------------------------------------------------------------------------
+    %       SECOND PAGE (EXAMPLE)
+    %----------------------------------------------------------------------------------------
+    
+    %\newpage % Start a new page
+    
+    %\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+    
+    %\section{Example Section}
+    
+    %\end{minipage} % The end of the left column
+    %\hfill
+    %\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+    
+    %\section{Example Section 2}
+    
+    %\end{minipage} % The end of the right column
+    
+    %----------------------------------------------------------------------------------------
+    
+    \end{document}
+    
