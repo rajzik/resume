@@ -286,5 +286,7 @@ TSWLatexianTemp*
 *.log
 *.top
 *.tui
+*.tmp
+*.tuo
 
 build
