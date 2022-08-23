@@ -16,7 +16,7 @@
     \newcommand{\mySmallSpace}{\vspace{3pt}}
     \setlist[itemize,1]{leftmargin=.2in}
     \AtBeginDocument{%
-    \renewcommand{\today}{Jun 2022}%
+    \renewcommand{\today}{August 2022}%
     }
 \begin{document}
 
@@ -61,9 +61,7 @@
 
 	\location{Language of Choice}
 	{\normalsize
-		Typescript \mySep{}
-		C\# \mySep{}
-		Python
+		Typescript
 		\mySmallSpace{}
 	}
 
@@ -71,15 +69,32 @@
 	{\small
 		Typescript \mySep{}
 		React \mySep{}
-		Recoil \mySep{}
-		SWR \mySep{}
-		TRPC \mySep{}
 		React-query \mySep{}
 		qraphQL~\mySep{}
+		Relay \mySep{}
+		TRPC \mySep{}
+		web~components~\mySep{}
+		zustand \mySep{}
+		jotai \mySep{}
+		\\
+		xstate \mySep{}
+		redux \mySep{}
 		Remix \mySep{}
 		Nextjs \mySep{}
+		\\
 		NodeJs \mySep{}
 		Deno \mySep{}
+		Bun
+		\mySmallSpace{}
+	}
+
+	\location{Build tools}
+	{\small
+		Rollup \mySep{}
+		Vite \mySep{}
+		Babel \mySep{}
+		Webpack \mySep{}
+		Gulp \mySep{}
 		Bun
 		\mySmallSpace{}
 	}
@@ -88,8 +103,12 @@
 	\location{Styles stack}
 	{\small
 		CSS \mySep{}
+		css-modules \mySep{}
+		Houdini \mySep{}
 		emotion \mySep{}
 		Tailwind \mySep{}
+		Sass \mySep{}
+		Less \mySep{}
 		JSS
 		\mySmallSpace{}
 	}
@@ -98,6 +117,10 @@
 	{\small
 		C/C++ \mySep{}
 		Dart \mySep{}
+		Flutter \mySep{}
+		React-native \mySep{}
+		C\# \mySep{}
+		Python \mySep{}
 		SQL
 		\mySmallSpace{}
 	}
@@ -128,7 +151,6 @@
 		\href{http://www.adobe.com/products/photoshop.html}{Photoshop} \mySep{}
 		\href{https://www.visualstudio.com/}{Visual Studio} \mySep{}
 		\href{https://code.visualstudio.com/}{Visual Studio Code} \mySep{}
-		\href{http://www.vim.org/}{Vim} \\
 		\href{https://www.docker.com/}{Docker} \mySep{}
 		\href{https://git-scm.com/}{Git}
 	}
@@ -182,33 +204,41 @@
 
 	\section{Experience}
 
+	\runsubsection{Principal Software Engineer}%
+	\descript{|\, Vertice.}
 
-
-	\runsubsection{Fullstack Developer}%
-	\descript{|\, IXPERTA s.r.o.}
-
-	\location{2015\ndash{}2019 | Brno, Czech Republic}
-	Development and maintenance of enterprise grade product for IP communication. \\
-	\href{https://www.unify.com/ourpartners/products-services/unified-communications/voice-platforms/hybrid-unified-communications-platforms.aspx}{OpenScape 4000}.
+	\location{2022\ndash{}2022 | Brno, Czech Republic}
+	Support of outdated frontend tech stack \& small updates on backend.
+	Initiated a migration from REST to graphql with AWS appsync \& amplify. \\
+	\href{https://www.vertice.one/}{Vertice}.
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
 	\vspace{\topsep} % Hacky fix for awkward extra vertical space
 	\begin{tightitemize}
-		\item Development of new features, bug-fixing and maintenance of existing code.
-		\item Continuous development.
-		\item Creation of RPMs.
-		\item Migration of Java applets to Javascript/HTML5.
+		\item Creation features and bug fixes.
+		\item Updates of AWS lambda functions.
+		\item Migration from REST to graphql.
 	\end{tightitemize}
 
+	\sectionspace % Some white-space after the section
+
+	\runsubsection{Frontend architect}%
+	\descript{|\, Oriflame Software.}
+
+	\location{2019\ndash{}2022 | Brno, Czech Republic}
+	Evolving/creating infrastructure and architecture.
+	Development of tools for other teams.
+	Support of the feature teams, communication with designers and management. \\
+	\href{https://oriflame.com/}{Oriflame}.
 	\vspace{\topsep} % Hacky fix for awkward extra vertical space
-
-	Microservice based system to recognize defects in picture with robotization. \\
-	\href{http://industrial.vision/}{Industrial Vision}.
 	\begin{tightitemize}
-		\item Microservice - Docker, swarm, rabbitMQ, mongoDB.
-		\item Continuous integration using gitlab CI.
-		\item Designing reusable and configurable user interface in React with typescript.
-		\item Testing code with Jest.
-		\item Design \& implementation of API via Eve.
+		\item Creation and support of design system. \href{https://storybook.oriflame.com/index.html}{\underline{storybook}}
+		\item Frontend workshops.
+		\item Reviews the work of others.
+		\item Creation and development of build system.
+		\item Build \& Test automation with automatic versioning.
+		\item Implementation of continuous integration \& delivery.
 	\end{tightitemize}
+
 
 	\sectionspace % Some white-space after the section
 
@@ -233,24 +263,20 @@
 
 	%------------------------------------------------
 
-	\runsubsection{Frontend architect}%
-	\descript{|\, Oriflame Software.}
+	\runsubsection{Fullstack Developer}%
+	\descript{|\, IXPERTA s.r.o.}
 
-	\location{2019\ndash{}2022 | Brno, Czech Republic}
-	Evolving/creating infrastructure and architecture.
-	Development of tools for other teams.
-	Support of the feature teams, communication with designers and management. \\
-	\href{https://oriflame.com/}{Oriflame}.
+	\location{2015\ndash{}2019 | Brno, Czech Republic}
+	Microservice based system to recognize defects in picture with robotization. \\
+	\href{http://industrial.vision/}{Industrial Vision}.
 	\vspace{\topsep} % Hacky fix for awkward extra vertical space
 	\begin{tightitemize}
-		\item Creation and support of design system. \href{https://storybook.oriflame.com/index.html}{\underline{storybook}}
-		\item Frontend workshops.
-		\item Reviews the work of others.
-		\item Creation and development of build system.
-		\item Build \& Test automation with automatic versioning.
-		\item Implementation of continuous integration \& delivery.
+		\item Microservice - Docker, swarm, rabbitMQ, mongoDB.
+		\item Continuous integration using gitlab CI.
+		\item Designing reusable and configurable user interface in React with typescript.
+		\item Testing code with Jest.
+		\item Design \& implementation of API via Eve.
 	\end{tightitemize}
-
 
 	\sectionspace % Some white-space after the section
 
@@ -259,6 +285,18 @@
 	%------------------------------------------------
 
 	\section{Other}
+
+	% \runsubsection{Opensource}%
+	% Contributing to open source projects. \\
+	% \begin{tightitemize}
+	% 	\item Workshop for frontend team.
+	% 	\item Usage of React, Redux, Redux-saga and Router.
+	% 	\item Styling with CSS modules.
+	% 	\item Test with Jest, Jasmine.
+	% \end{tightitemize}
+
+	% \sectionspace % Some white-space after the section
+
 
 	\runsubsection{Frontend consultant}%
 	\descript{|\, Safetica}
@@ -273,23 +311,42 @@
 
 	\sectionspace % Some white-space after the section
 
-	%------------------------------------------------
-	% Certificates and Awards
-	%------------------------------------------------
-	% \section{Certificates \& Awards}
+% 	\section{Certificates \& Awards}
 
-	\section{Certificates \& Awards}
-
-	\begin{tabular}{rl}
-		2013 & Cisco network academy Routing and Switching 	\\
-		2013 & Microsoft IT Academy 						\\
-		2013 & Driving license class B                     	\\
-		2017 & Driving license class A
-	\end{tabular}
+% 	\begin{tabular}{rl}
+% 		2013 & Cisco network academy Routing and Switching 	\\
+% 		2013 & Microsoft IT Academy 						\\
+% 		2013 & Driving license class B                     	\\
+% 		2017 & Driving license class A
+% 	\end{tabular}
 
 	%----------------------------------------------------------------------------------------
 
 \end{minipage} % The end of the right column
+
+% \begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+% \section{}
+
+% \end{minipage} % The end of the right column
+
+% \hfill
+
+% \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+% 	%------------------------------------------------
+% 	% Certificates and Awards
+% 	%------------------------------------------------
+% 	% \section{Certificates \& Awards}
+
+% 	\section{Certificates \& Awards}
+
+% 	\begin{tabular}{rl}
+% 		2013 & Cisco network academy Routing and Switching 	\\
+% 		2013 & Microsoft IT Academy 						\\
+% 		2013 & Driving license class B                     	\\
+% 		2017 & Driving license class A
+% 	\end{tabular}
+% \end{minipage} % The end of the right column
+
 
 %----------------------------------------------------------------------------------------
 %       SECOND PAGE (EXAMPLE)
