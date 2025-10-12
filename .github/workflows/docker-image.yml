@@ -19,8 +19,7 @@ jobs:
           image: moss/xelatex:latest
           options: -v ${{ github.workspace }}:/data
           run: |
-            cd data
-            latex xelatex resume.tex
+            make
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply xelatex changes

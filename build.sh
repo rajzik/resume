@@ -10,7 +10,7 @@ else
 fi
 
 # Build the container
-$CONTAINER_CMD build -t latex .
 
 # Run the container to compile the resume
-$CONTAINER_CMD run --rm -i -v "$PWD":/data latex xelatex resume.tex
+# $CONTAINER_CMD run --rm -i -v "$PWD":/data latex xelatex resume.tex
+$CONTAINER_CMD run --rm -v $PWD:/data moss/xelatex make
