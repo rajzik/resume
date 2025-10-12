@@ -6,6 +6,8 @@
 
 ## Building
 
+Following command will generate `resume.pdf`:
+
 ```sh
 ./build.sh
 ```
