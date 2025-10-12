@@ -1,0 +1,96 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  Jan Silhan
+% Project: https://github.com/rajzik/cv
+% License: MIT
+%------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+
+% Page size
+\usepackage[top=1.2cm, bottom=2.6cm, left=1.8cm, right=2.3cm, marginparwidth=1.75cm]{geometry}
+
+% Packages
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+
+\pagenumbering{gobble}
+% Font style
+\usepackage{fontspec}
+\setmainfont{Geist}[
+    Path=./fonts/geist/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-RegularItalic,
+    BoldItalicFont=*-BoldItalic,
+    SemiBoldFont=*-SemiBold,
+    MediumFont=*-Medium
+    ]
+\newfontfamily\GeistMono{GeistMono}[
+    Path=./fonts/geist-mono/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+    SemiBoldFont=*-SemiBold
+    ]
+
+% Emph style
+\renewcommand{\emph}[1]{\textbf{\fontsize{11pt}{11pt}\selectfont #1}}
+
+% Section block
+\newcommand{\sectionBlock}[2]{%
+    \noindent
+    \begin{minipage}[t]{2.7cm} % Title
+    \raggedright
+    #1
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{13.85cm} % Content
+    \raggedright
+    #2
+    \end{minipage}
+    \vspace{25pt}
+}
+
+% Section title
+\titleformat{\section}{
+  \setstretch{1.0}
+  \scshape\raggedright
+  \fontsize{12.5pt}{12.5pt}\selectfont
+  \vspace{-8pt}
+}{}{0em}{}
+
+
+% Section content
+
+% Skill list
+\newcommand{\skillListStart}{\begin{itemize}[leftmargin=7pt, label={}, itemsep=0pt]}
+\newcommand{\skillListEnd}{\end{itemize}\vspace{-11pt}}
+
+% Item list
+\newcommand{\itemListStart}{\begin{itemize}[itemsep=0pt, label={$\bullet$}]}
+\newcommand{\itemListEnd}{\end{itemize}{\vspace{3pt}}}
+\newcommand{\myItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+
+
+% Sub section heading
+\newcommand{\subSectionHeading}[4]{
+  \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}[t]{p{13.74cm}}
+      \emph{#1} \hfill #2 \\
+      #3 \hfill #4 \\
+    \end{tabular}\vspace{-5pt}
+}
