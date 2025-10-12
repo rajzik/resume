@@ -16,7 +16,7 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-          image: thomasweise/docker-texlive-full:latest
+          image: moss/xelatex:latest
           options: -v ${{ github.workspace }}:/data
           run: |
             cd data
