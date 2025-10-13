@@ -5,11 +5,13 @@
 % License: MIT
 %------------------------------------
 
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{styles/resume}[2025/10/12 Resume style]
 
 % Page size
-\usepackage[top=1.2cm, bottom=2.6cm, left=1.8cm, right=2.3cm, marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper]{geometry}
+\geometry{top=1.2cm, bottom=2cm, left=1.8cm, right=2.1cm, marginparwidth=1.75cm}
 
 % Packages
 \usepackage{xcolor}
@@ -46,16 +48,16 @@
 % Section block
 \newcommand{\sectionBlock}[2]{%
     \noindent
-    \begin{minipage}[t]{2.7cm} % Title
-    \raggedright
+    \begin{minipage}[t]{2.4cm} % Title
+    \RaggedRight
     #1
     \end{minipage}
     \hfill
-    \begin{minipage}[t]{13.85cm} % Content
+    \begin{minipage}[t]{14.15cm} % Content
     \raggedright
     #2
     \end{minipage}
-    \vspace{25pt}
+    \vspace{14pt}
 }
 
 % Section title
