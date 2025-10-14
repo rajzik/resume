@@ -11,7 +11,7 @@
 
 % Page size
 \usepackage[a4paper]{geometry}
-\geometry{top=1.2cm, bottom=2cm, left=1.8cm, right=2.1cm, marginparwidth=1.75cm}
+\geometry{top=0.8cm, bottom=2cm, left=1.8cm, right=2.1cm, marginparwidth=1.75cm}
 
 % Packages
 \usepackage{xcolor}
@@ -31,15 +31,18 @@
     UprightFont=*-Regular,
     BoldFont=*-Bold,
     ItalicFont=*-RegularItalic,
-    BoldItalicFont=*-BoldItalic
-    ]
+    BoldItalicFont=*-BoldItalic,
+    FontFace={m}{n}{Font=*-Medium},
+]
+
 \newfontfamily\GeistMono{GeistMono}[
     Path=./fonts/geist-mono/,
     Extension = .ttf,
     UprightFont=*-Regular,
     BoldFont=*-Bold,
     ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic
+    BoldItalicFont=*-BoldItalic,
+    FontFace={m}{n}{Font=*-Medium},
     ]
 
 % Emph style
@@ -63,7 +66,7 @@
 % Section title
 \titleformat{\section}{
   \setstretch{1.0}
-  \scshape\raggedright
+  \raggedright
   \fontsize{12.5pt}{12.5pt}\selectfont
   \vspace{-8pt}
 }{}{0em}{}
@@ -86,9 +89,11 @@
 
 % Sub section heading
 \newcommand{\subSectionHeading}[4]{
-  \renewcommand{\arraystretch}{1.1}
+  {%
+  \renewcommand{\arraystretch}{1.1}%
     \begin{tabular}[t]{p{13.74cm}}
       \emph{#1} \hfill #2 \\
       #3 \hfill #4 \\
     \end{tabular}\vspace{-5pt}
+  }
 }
