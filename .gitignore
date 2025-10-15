@@ -290,3 +290,5 @@ TSWLatexianTemp*
 *.tuo
 
 build
+
+plex-otf.sty

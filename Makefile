@@ -1,13 +1,18 @@
-all: cv.pdf
+######################
+#      Makefile      #
+######################
+
+filename=resume
+
+.PHONY: pdf view clean
+
+pdf:
+	xelatex ${filename}.tex
+
+view:
+	while inotifywait --event modify,move_self,close_write ${filename}.tex; \
+		do xelatex -halt-on-error ${filename} \
+		${filename}; done
 
 clean:
-	rm -rf build
-
-purge: clean
-	rm -rf *.pdf
-
-cv.pdf: *.tex
-	@mkdir -p build
-	TEXINPUTS='styles:' xelatex -interaction batchmode -output-directory build cv
-	TEXINPUTS='styles:' xelatex -interaction batchmode -output-directory build cv
-	@cp build/cv.pdf cv.pdf
+	rm -f ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg,snm,toc,nav}

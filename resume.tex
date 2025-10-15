@@ -1,0 +1,103 @@
+%-------------------------------------
+% Resume in LaTeX (XeLaTeX)
+% Author:  Jan Silhan
+% Project: https://github.com/rajzik/cv
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{styles/resume}
+
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{center}
+  {\fontsize{30pt}{30pt}\selectfont \fontseries{m}\selectfont Jan Šilhan}
+\end{center}
+
+\begin{justify}
+  \noindent
+Frontend Architect with 10+ years of experience building scalable web applications
+and leading \\high-performing engineering teams. Expert in React ecosystems, modern
+frontend architecture, \\and developer tooling. Proven track record of successful
+migrations, system redesigns, and team growth.
+\vspace{2pt}
+
+\end{justify}
+
+\begin{center}
+  \noindent
+  \setstretch{0.6}
+  {\GeistMono \fontsize{9pt}{9pt}\selectfont \href{tel:+420777160775}{+420 777 160 775}}  % Phone number
+  {\GeistMono |}
+  {\GeistMono \fontsize{9pt}{9pt}\selectfont \href{mailto:jan.silhan@icloud.com}{jan.silhan@icloud.com}}  % E-mail address
+  {\GeistMono |}
+  {\GeistMono \fontsize{9pt}{9pt}\selectfont \href{https://www.linkedin.com/in/jan-%C5%A1ilhan/}{linkedin.com/in/jan-šilhan}}  % Home page
+  {\GeistMono |}
+  {\GeistMono \fontsize{9pt}{9pt}\selectfont \href{https://github.com/rajzik}{github.com/rajzik}}  % Home page
+  \vspace{4pt}
+\end{center}
+\vspace{8pt}
+
+
+% -------------------- Work Experience --------------------
+\sectionBlock{
+\section{Work Experience}
+}{
+\subSectionHeading
+  {RISE}{Brno, Czech Republic}
+  {Frontend Architect}{2025 - Present}
+\itemListStart
+  \myItem{Led the complete architectural redesign of the core Electron application \\to improve modularity, scalability, and long-term maintainability.}
+  \myItem{Championed the modernization of the technology stack, introducing new tools \\to boost developer productivity and application performance.}
+  \myItem{Implemented a new development strategy by successfully migrating to \\a monorepo architecture, unifying the codebase and simplifying dependency management.}
+  \myItem{Engineered significant optimizations for the Electron application bundle, \\resulting in a drastically reduced file size and faster startup times.}
+  \myItem{Enforced strict TypeScript best practices across the codebase to enhance type safety, reduce runtime errors, and improve overall code quality.}
+\itemListEnd
+\subSectionHeading
+  {PwC}{Brno, Czech Republic}
+  {Frontend Developer Lead}{2022 - 2025}
+\itemListStart
+  \myItem{Led a team of 6 frontend engineers, providing technical vision, mentorship, and hands-on leadership.}
+  \myItem{Led a complex, zero-downtime migration of the entire application from Create React App to Next.js.}
+  \myItem{Rearchitected the application's core to improve scalability and performance.}
+  \myItem{Managed the full team growth lifecycle, including recruiting, interviewing, onboarding, and professional development.}
+  \myItem{Served as the key technical liaison between the engineering team and stakeholders to translate business requirements into actionable strategies.}
+\itemListEnd
+\subSectionHeading
+  {Oriflame}{Brno, Czech Republic}
+  {Frontend Architect}{2019 - 2022}
+\itemListStart
+  \myItem{Architected company-wide component library that unified design language and accelerated development cycles.}
+  \myItem{Engineered a suite of build tools to automate project, library, and monorepo bootstrapping, enabling simple and non-disruptive upgrades.}
+  \myItem{Designed and implemented unified CI/CD pipelines with Azure Pipelines and automated versioning, reducing manual overhead and minimizing release errors.}
+  \myItem{Developed shared utility libraries that significantly reduced application bundle sizes and improved performance across all company web properties.}
+  \myItem{Fostered a culture of technical excellence by providing architectural guidance, leading company-wide code reviews, and conducting technical workshops.}
+  \myItem{Played a key role in scaling the engineering department by serving as a primary technical interviewer during the hiring process.}
+\itemListEnd
+
+\subSectionHeading
+  {IXPERTA, s.r.o.}{Brno, Czech Republic}
+  {Frontend Developer}{2015 - 2019}
+}
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \emph{Languages}: {\GeistMono \fontsize{10pt}{10pt}\selectfont TypeScript}, {\GeistMono \fontsize{10pt}{10pt}\selectfont C\#}.
+\item \emph{Frontend}: {\GeistMono \fontsize{10pt}{10pt}\selectfont React}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Next.js}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Expo}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Effect}.
+\item \emph{Backend}: {\GeistMono \fontsize{10pt}{10pt}\selectfont Node.js}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Bun}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Deno}.
+\item \emph{Testing}: {\GeistMono \fontsize{10pt}{10pt}\selectfont Vitest}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Playwright}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Jest}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Testing library}.
+\item \emph{Design}: {\GeistMono \fontsize{10pt}{10pt}\selectfont Figma}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Storybook}.
+\item \emph{Styles}: {\GeistMono \fontsize{10pt}{10pt}\selectfont Tailwind}, {\GeistMono \fontsize{10pt}{10pt}\selectfont CSS}.
+\item \emph{Databases}: {\GeistMono \fontsize{10pt}{10pt}\selectfont Prisma}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Convex}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Drizzle}.
+\item \emph{Tools}: {\GeistMono \fontsize{10pt}{10pt}\selectfont Git}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Docker}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Github Actions}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Azure pipelines}, {\GeistMono \fontsize{10pt}{10pt}\selectfont Gitlab CI}.
+\skillListEnd
+}
+
+
+\end{document}
